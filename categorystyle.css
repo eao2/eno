@@ -1,0 +1,11 @@
+/* Hide game items by default */
+.game-item {
+    display: none;
+}
+
+/* Show game items when they match the selected category */
+.game-item[data-category="action"],
+.game-item[data-category="adventure"],
+.game-item[data-category="strategy"] {
+    display: block;
+}

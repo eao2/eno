@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - GameUnlocked</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/> 
+    
+    
+    <style>
+        #categories {
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        #categories ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        #categories ul li {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            background-color: #333;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+        
+        #categories ul li:hover {
+            background-color: #555;
+        }
+        
+        #categories ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+        
+        .game-item1, .game-item2, .game-item3 {
+            display: none;
+        }
+
+        
+        .game-item1[data-category="action"],
+        .game-item2[data-category="adventure"],
+        .game-item3[data-category="strategy"] {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">GameUnlocked</div>
+            <div class="navigation">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="reqgames.html">Request Games</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="search-container">
+                <h2>Search Games</h2>
+                <form action="#" method="GET">
+                    <input type="text" name="search" placeholder="Search games...">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="categories">
+            <h2>Categories</h2>
+            <ul id="category-tabs">
+                <li><a href="#" data-category="all">All</a></li>
+                <li><a href="#" data-category="action">Action</a></li>
+                <li><a href="#" data-category="adventure">Adventure</a></li>
+                <li><a href="#" data-category="strategy">Strategy</a></li>
+            </ul>
+        </section>
+        <section id="game-listings">
+            <div class="game-row">
+                <ul class="game-item1" data-category="adventure">
+                    <li style="color: #fff; font-size: 25px;font-family: monospace; font-weight: bolder; ">Minecraft <p></p></li>
+                    <li><img src="minecraft-poster-2464-p.jpg" alt="" width="200px" height="300px"></li>
+                    <li><a href="https://tlauncher.org/installer"><button type="button" class="download-button">Download</button></a></li>            
+                </ul>
+                <ul class="game-item2" data-category="strategy">
+                    <li style="color: #fff; font-size: 25px;font-family: monospace; font-weight: bolder; ">Cup Head <p></p></li>
+                    <li><img src="s-l1600.jpg" alt="" width="200px" height="300px"></li>
+                    <li><a href="https://gogunlocked.com/cuphead-free-download/"></a><button type="button" class="download-button">Download</button></li>
+                </ul>
+                <ul class="game-item3" data-category="action">
+                    <li style="color: #fff; font-size: 25px;font-family: monospace; font-weight: bolder; ">Assassin's creed <br> brotherhood</li>
+                    <li><img src="s-l1200.webp" alt="" width="200px" height="300px"></li>
+                    <li><a href="https://oceanofgames.com/assassin-creed-brotherhood-free-download-ofgv-1282656/"><button type="button" class="download-button">Download</button></a></li>
+                </ul>
+            </div>
+            
+        </section>
+    </main>
+    <script src="script.js" defer></script>
+    
+
+    <footer>
+        <p>&copy; 2024 Free PC Games. All rights reserved.</p>
+    </footer>
+</body>
+</html>
